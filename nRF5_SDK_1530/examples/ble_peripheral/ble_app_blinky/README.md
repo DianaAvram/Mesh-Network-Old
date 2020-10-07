@@ -1,6 +1,6 @@
 Documentation on how to successfully run examples on Thingy:52 devices<a name="TOP"></a>
 ===================
-Here is an explanation on how this code runs and how to make it run on the Nordic device:
+Here is an explanation on how to load the provided code on the Thingy devices.
 ## Hardware needed ##
 - 2 x [Thingy:52](https://www.nordicsemi.com/Software-and-tools/Prototyping-platforms/Nordic-Thingy-52)
 - 1 x [nRF52840 Board](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK)
@@ -8,15 +8,17 @@ Here is an explanation on how this code runs and how to make it run on the Nordi
 - 1 x  [10-pin 2x5 Socket-Socket 1.27mm IDC (SWD) Cable](https://www.adafruit.com/product/1675)
 - 1 x smartphone 
 
-### The HW setup is the following: ###
+### Hardware setup ###
+The HW setup for flashing the code to the Thingy:52 is the following:  
 [PC] ---- micro USB ---- [nRF52840] ---- SWD cable ---- [Thingy:52]
 
 ## Software needed ##
 - PC/laptop:
   - Segger Embedded Studio
     - Remarks:
-    - The PC needs to have Segger Embedded Studio installed (I used the version Embedded Studio for ARM, Windows, 64-bit)
-    - In Segger Embedded Studio, steps 8 and 9 from this link need to be followed: https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo. However, Step 9 is not so well explained, so I will explain it in more detail later
+    - For Segger, I used the version Embedded Studio for ARM, Windows, 64-bit
+    - In Segger Embedded Studio, the settings in steps 8 and 9 from this link need to be followed: https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo. However, Step 9 is not so well explained, so I will explain it in more detail, below [Additions](#Additions "Goto Additions")
+  
 - Phone:
   - [Nordic Thingy](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfthingy&hl=en_US)
   - [nRF Mesh](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner)
