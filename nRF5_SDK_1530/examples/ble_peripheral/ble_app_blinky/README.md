@@ -2,22 +2,24 @@ Documentation on how to successfully run examples on Thingy:52 devices<a name="T
 ===================
 Here is an explanation on how this code runs and how to make it run on the Nordic device:
 ## Hardware needed ##
-- 2 x Thingy:52, 
-- 1 x nRF52840 Board,
-- 1 x micro USB cable, 
-- 1 x  10-pin 2x5 Socket-Socket 1.27mm IDC (SWD) Cable, 
+- 2 x [Thingy:52](https://www.nordicsemi.com/Software-and-tools/Prototyping-platforms/Nordic-Thingy-52)
+- 1 x [nRF52840 Board](https://www.nordicsemi.com/Software-and-Tools/Development-Kits/nRF52840-DK)
+- 1 x micro USB cable 
+- 1 x  [10-pin 2x5 Socket-Socket 1.27mm IDC (SWD) Cable](https://www.adafruit.com/product/1675)
 - 1 x smartphone 
 
 ### The HW setup is the following: ###
 [PC] ---- micro USB ---- [nRF52840] ---- SWD cable ---- [Thingy:52]
 
-SOFTWARE NEEDED:
-
-- The PC needs to have Segger Embedded Studio installed (I used the version Embedded Studio for ARM, Windows, 64-bit)
-- In Segger Embedded Studio, steps 8 and 9 from this [link] (https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo) need to be followed. However, Step 9 is not so well explained, so I will explain it in more detail later
-- The phone needs to have the following apps installed:
-- [X] [Nordic Thingy](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfthingy&hl=en_US)
-- [X] [nRF Mesh](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner)
+## Software needed ##
+- PC/laptop:
+  - Segger Embedded Studio
+    - Remarks:
+    - The PC needs to have Segger Embedded Studio installed (I used the version Embedded Studio for ARM, Windows, 64-bit)
+    - In Segger Embedded Studio, steps 8 and 9 from this link need to be followed: https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo. However, Step 9 is not so well explained, so I will explain it in more detail later
+- Phone:
+  - [Nordic Thingy](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfthingy&hl=en_US)
+  - [nRF Mesh](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrfmeshprovisioner)
  
  #### Remarks: ####
 - No HW modifications need to be made to the  nRF52840 board or to the Thingy:52 in the beginning (e.g. no jumpers).
