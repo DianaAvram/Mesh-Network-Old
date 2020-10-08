@@ -37,19 +37,19 @@ In the menu described in the previous step, go to "Code"-> "Preprocessor" -> "Pr
 
  ### UPDATE 17.09.2020 ###  
 #### New approach #1:  ####
-	Instead of trying to combine the mesh and SDK, try to understand the already made example	SDK UART coexistence example
-	From <https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.meshsdk.v3.2.0/md_examples_sdk_coexist_ble_app_uart_coexist_README.html?cp=5_2_3_5_1> \
-	-> does not work as expected \
-	- More  specifically, it does advertise (can see on the phone), but the LED does not function accordingly. And putty does not work\
-	-> LED problem solved: it's pca10040 instead of pca10056!!!  :-) \
+- Instead of trying to combine the mesh and SDK, try to understand the already made example	SDK UART coexistence example
+- From <https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.meshsdk.v3.2.0/md_examples_sdk_coexist_ble_app_uart_coexist_README.html?cp=5_2_3_5_1> \
+  - does not work as expected \
+  - More  specifically, it does advertise (can see on the phone), but the LED does not function accordingly. And putty does not work\
+  - LED problem solved: it's pca10040 instead of pca10056!!!  :-) \
 #### New approach #2: ####
-	UART/Serial Port Emulation over BLE   - single version (no combination)\
-	From <https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v15.3.0/ble_sdk_app_nus_eval.html> \
-	- LED and putty work OK \
-	- however, the TX characteristic cannot be successfully written from the phone - TBD why \
-	- issue is opened under: https://devzone.nordicsemi.com/f/nordic-q-a/66051/uart-serial-port-emulation-over-ble-problem \
-	- problem with putty partially solved: connect from SES, then open putty, set baud rate 115200, then flash the code. \
-	-  work in progress
+- UART/Serial Port Emulation over BLE   - single version (no combination)\
+- From <https://infocenter.nordicsemi.com/topic/com.nordic.infocenter.sdk5.v15.3.0/ble_sdk_app_nus_eval.html> \
+  - LED and putty work OK \
+  - however, the TX characteristic cannot be successfully written from the phone - TBD why \
+  - issue is opened under: https://devzone.nordicsemi.com/f/nordic-q-a/66051/uart-serial-port-emulation-over-ble-problem \
+  - problem with putty partially solved: connect from SES, then open putty, set baud rate 115200, then flash the code. \
+  -  work in progress
  ### UPDATE 08.10.2020 ###  
  - It looks like the combined version needs provisioning with the help of an additional development board (not via the phone)
  - Therefore, we plan to use 1 x nRF52833 and 2 x nRF52840
