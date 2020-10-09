@@ -34,13 +34,13 @@ In order to run the default SW on Thingy:
 - The Thingy:52 devices come with a default firmware installed. This may be used in order to interact with the board for the first time and check its functionalities. For this, the Nordic Thingy Application needs to be downloaded on the smartphone.
 - Afterwards, turn on the Thingy:52’s – there is a small switch on the bottom left side. Now, the Thingy:52 will start to advertise 
 - Next, activate Bluetooth and location from your phone and enter the Nordic Thingy Application. Now, your phone will be looking for available devices, to connect to
-- From now on, you should be able to connect to each new Thingy, give them names and discover all its sensors data in real time.
+- From now on, you should be able to connect to each new Thingy, give them names and discover all its sensors data in real time.  
 -----------------------insert photo here------------------------------------------
 - All this information is kept after turning off the Thingy’s. To erase the firmware, please have a look at the next steps
 
 ### Next Steps ###
 In order to run the Mesh Software, on Thingy:52:
-- After discovering the Thingy:52 features,  the Mesh firmware can be loaded into the boards, so that they can participate in a Mesh network. This will give the user the possibility of assigning the boards different individual or group addresses, so that controlling multiple Thingy’s from the phone can be achieved easily
+- After discovering the Thingy:52 features,  the Mesh firmware can be loaded into the boards, so that they can participate in a Mesh network. This will give the user the possibility of assigning the boards different individual or group addresses, so that controlling multiple Thingy’s from the phone can be achieved easily  
 -To achieve this, the Thingy:52 devices need to be erased of this initial firmware and loaded with a new one. For this, the mentioned tutorial in [this link] (https://github.com/NordicPlayground/thingy52-mesh-provisioning-demo) shall be followed. 
 - As I mentioned in the the HW setup part, the way to load the code on Thingy’s is via the SWD cable.
 
