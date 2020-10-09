@@ -54,7 +54,8 @@ In the menu described in the previous step, go to "Code"-> "Preprocessor" -> "Pr
  - It looks like the combined version needs provisioning with the help of an additional development board (not via the phone)
  - Therefore, we plan to use 1 x nRF52833 and 2 x nRF52840
  - Problem: the  nRF52833 code is in a newer version of Mesh SDK. And combining it with the SDK v15.3 is problematic 
- - Next step: try SDK Mesh 4.2.0 with newer version of SDK
+ - Next step: try SDK Mesh 4.2.0 with newer version of SDK - confirm that SDK Mesh 4.2.0 requires some files (e.g. ble.h) and some modifications in current files. These modif. have been added in nRF5 SDK v16.0.0. 
+ - Next step: : try SDK Mesh 4.2.0 & nRF5 SDK v16.0.0. 
 
 
 Remarks:\
